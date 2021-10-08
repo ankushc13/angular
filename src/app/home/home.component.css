@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    position: relative;
+    text-align:center;
+    padding: 100px;
+}
+.coach, .user {
+    background: black;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+}
+h1 { text-align: center;
+    margin-top: 50px;
+}
+img {
+    margin: 25px 50px 20px 100px;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: green !important;
+    width: 250px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}

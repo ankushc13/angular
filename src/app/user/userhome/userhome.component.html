@@ -1,0 +1,58 @@
+<div class="row itemsBlock" *ngIf="coachDetail.length>0&&!book&&!success">
+    <div *ngFor="let item of coachDetail" class="col-md-4 col-sm-6 col-12" style="float:none;margin:auto;">
+        <div class="coach">
+            <div class="image" *ngIf="item.gender==='F'"><img src="../../../assets/Images/female.png"></div>
+            <div class="image"*ngIf="item.gender==='M'"><img src="../../../assets/Images/male.png"></div>
+            <div class="detail">
+                <div>
+                    <h4 style="color: black;">{{item.name}}</h4>
+                <h4 style="color: black;">Coach Id: {{item.id}}</h4>
+                <p style="color: black;">Date Of Birth: {{item.dateOfBirth}}</p>
+                <p style="color: black;">Mobile Number: {{item.mobileNumber}}</p>
+                <p style="color: black;">Date Of Birth: {{item.speciality}}</p>
+                </div>
+                <button type="button" style="margin-left: 25px;" class="btn btn-primary" (click)="onClick(item.id)">Book an Appointment</button>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="container" *ngIf="book&&!success">
+    <div class="appoint">
+        <form [formGroup]="bookForm">
+            <div class="row">
+                    <div class="form-group">
+                        <label>Appointment Date: </label>
+                        <input id="appointmentDate" class="form-control" type="date" formControlName="appointmentDate">
+                        <p *ngIf="bookForm.controls['appointmentDate'].errors?.age"style="color: red;">{{CONSTANT.appointmentDateError}}</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Prefered Slot: </label>
+                        <div class="radio">
+                            <input  type="radio" name="slot" class="form-control" formControlName="slot" value="9 AM to 10 AM" style="width: 20px;">
+                            <span style="margin-right: 30px;" >9 AM to 10 AM </span>
+                            <input  type="radio" name="slot" class="form-control" formControlName="slot" value="10 AM to 11 AM " style="width: 20px;">
+                            <span style="margin-right: 30px;" >10 AM to 11 AM </span>
+                            <input  type="radio" name="slot" class="form-control" formControlName="slot" value="11 AM to 12 PM" style="width: 20px;">
+                            <span style="margin-right: 30px;" >11 AM to 12 PM </span>
+                            <input  type="radio" name="slot" class="form-control" formControlName="slot" value="2 PM to 3 PM" style="width: 20px;">
+                            <span style="margin-right: 30px;" >2 PM to 3 PM </span>
+                            <input  type="radio" name="slot" class="form-control" formControlName="slot" value="3 PM to 4 PM" style="width: 20px;">
+                            <span style="margin-right: 30px;" >3 PM to 4 PM </span>
+                            <input  type="radio" name="slot" class="form-control" formControlName="slot" value="4 PM to 5 PM " style="width: 20px;">
+                            <span style="margin-right: 30px;" >4 PM to 5 PM </span>
+                        </div>
+                     </div>
+                </div>
+        </form>
+        <div style="text-align:center;">
+            <button type="button" class="btn btn-primary" (click)="confirmAppointment()">Register</button>
+        </div>
+    </div>
+ </div>
+
+<div class="container" *ngIf="success">
+    <div class="coach" style="background-color: black;">
+        <h4 style="color: white;">Your appointment is scheduled successfully</h4>
+        <button  class="btn btn-primary" (click)="success=false;book=false">Go back</button>
+    </div>
+</div>

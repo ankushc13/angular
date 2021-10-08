@@ -1,0 +1,185 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Maria",
+      "password": "maria12345",
+      "gender": "F",
+      "dateOfBirth": "1996-01-01",
+      "email": "maria@gmail.com",
+      "mobileNumber": 1234567890,
+      "pincode": 123456,
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India"
+    },
+    {
+      "name": "Sera",
+      "password": "Sera@123",
+      "dateOfBirth": "1997-01-01",
+      "gender": "F",
+      "mobileNumber": 1234567890,
+      "email": "sera@gmail.com",
+      "pincode": 123456,
+      "city": "Kozhikode",
+      "state": "Kerala",
+      "country": "India",
+      "id": 2
+    },
+    {
+      "name": "dddd",
+      "password": "ddddd",
+      "email": "dddd",
+      "mobileNumber": 2222222222,
+      "dateOfBirth": "1995-02-22",
+      "gender": "male",
+      "pincode": 111111,
+      "city": "kot",
+      "state": "raj",
+      "country": "ind",
+      "id": 3
+    },
+    {
+      "name": "ddd",
+      "password": "ddddd",
+      "email": "ddddd",
+      "mobileNumber": 1111111111,
+      "dateOfBirth": "1993-10-12",
+      "gender": "male",
+      "pincode": 111111,
+      "city": "kot",
+      "state": "raj",
+      "country": "ind",
+      "id": 4
+    }
+  ],
+  "coaches": [
+    {
+      "id": 1,
+      "name": "Rose",
+      "password": "rose12345",
+      "gender": "F",
+      "dateOfBirth": "1996-01-01",
+      "mobileNumber": 1234567890,
+      "speciality": "Confidence Issues"
+    },
+    {
+      "name": "Setna",
+      "password": "Setna@123",
+      "dateOfBirth": "1995-01-01",
+      "gender": "F",
+      "mobileNumber": 1235678905,
+      "speciality": "Depression Issues",
+      "id": 2
+    },
+    {
+      "name": "ank",
+      "password": "an3",
+      "dateOfBirth": "1995-01-01",
+      "gender": "M",
+      "mobileNumber": 1235678905,
+      "speciality": "Depression Issues",
+      "id": 3
+    }
+  ],
+  "bookings": [
+    {
+      "appointmentDate": "2021-09-12",
+      "slot": "9 AM to 10 AM",
+      "userId": 2,
+      "coachId": 2,
+      "id": 1
+    },
+    {
+      "appointmentDate": "2021-08-12",
+      "slot": "9 AM to 10 AM",
+      "userId": 2,
+      "coachId": 2,
+      "id": 2
+    },
+    {
+      "appointmentDate": "2021-08-12",
+      "slot": "9 AM to 10 AM",
+      "userId": 2,
+      "coachId": 2,
+      "id": 3
+    },
+    {
+      "appointmentDate": "2021-08-12",
+      "slot": "9 AM to 10 AM",
+      "userId": 2,
+      "coachId": 2,
+      "id": 4
+    },
+    {
+      "appointmentDate": "2021-10-11",
+      "slot": "11 AM to 12 PM",
+      "userId": "1",
+      "coachId": "1",
+      "id": 5
+    },
+    {
+      "appointmentDate": "2021-10-11",
+      "slot": "10 AM to 11 AM ",
+      "userId": "1",
+      "coachId": "1",
+      "id": 6
+    },
+    {
+      "appointmentDate": "2021-10-12",
+      "slot": "10 AM to 11 AM ",
+      "userId": "1",
+      "coachId": "1",
+      "id": 7
+    },
+    {
+      "appointmentDate": "2021-10-05",
+      "slot": "",
+      "userId": "1",
+      "coachId": "1",
+      "id": 8
+    },
+    {
+      "appointmentDate": "2021-10-12",
+      "slot": "10 AM to 11 AM ",
+      "userId": "1",
+      "coachId": "1",
+      "id": 9
+    },
+    {
+      "appointmentDate": "2021-10-05",
+      "slot": "9 AM to 10 AM",
+      "userId": "1",
+      "coachId": "1",
+      "id": 10
+    },
+    {
+      "appointmentDate": "2021-10-11",
+      "slot": "10 AM to 11 AM ",
+      "userId": "1",
+      "coachId": "1",
+      "id": 11
+    },
+    {
+      "appointmentDate": "2021-10-05",
+      "slot": "10 AM to 11 AM ",
+      "userId": "1",
+      "coachId": "1",
+      "id": 12
+    },
+    {
+      "appointmentDate": "2021-10-11",
+      "slot": "9 AM to 10 AM",
+      "userId": "1",
+      "coachId": "1",
+      "id": 13
+    },
+    {
+      "appointmentDate": "2021-10-11",
+      "slot": "10 AM to 11 AM ",
+      "userId": "1",
+      "coachId": "1",
+      "id": 14
+    }
+  ]
+}

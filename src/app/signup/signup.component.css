@@ -1,0 +1,47 @@
+.container {
+    margin: 20px;
+}
+.coach,.user {
+    background: black;
+    height: 550px;
+    width: 900px;
+    margin-left: 300px;
+    border-radius: 10px;
+    color: white;
+}
+img{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.media{
+    display:flex; 
+    flex-direction: row;
+     justify-content: center; 
+     align-items: center
+}
+
+.row{
+    margin-left: 20px;
+}
+
+input{
+    width: 400px;
+}
+
+.radio{
+    display:flex; 
+    flex-direction: row;
+    align-items: center
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: green !important;
+    width: 400px;
+    margin-top: 40px;
+}
+.success{
+    margin-left: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}

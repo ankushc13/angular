@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    position: relative;
+    text-align:center;
+    padding: 100px;
+   
+
+}
+.coach, .user {
+    background: black;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    height: auto;
+    min-width: 300px;
+}
+img {
+    margin: 25px 50px 20px 100px;
+}
+input{
+    width: 250px;
+    margin-left: 25px;
+
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    width: 250px;
+    margin-bottom: 10px;
+}
