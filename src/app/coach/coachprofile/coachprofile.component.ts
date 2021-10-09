@@ -24,12 +24,3 @@ export class CoachprofileComponent implements OnInit {
   }
 
 }
-function getId(res:any):any{
-  let id;
-  for (const [key, value] of Object.entries(res)) {
-    if(key=='coachId'){
-      id=value;
-    }
-  }
-  return id;
-}

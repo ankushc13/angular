@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
   }
   coachLogin(){
     this.fail=false;
-    let url ="http://localhost:8080/coaches/";
+    let url ="http://localhost:3333/coaches/login";
     this.loginService.login(this.coachForm.value,url).subscribe(res=>{this.id= this.coachForm.controls["id"].value
     if(!this.fail){
       sessionStorage.clear()
@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
   }
   userLogin(){
     this.fail=false;
-    let url ="http://localhost:8080/users/";
+    let url ="http://localhost:3333/users/login";
     this.loginService.login(this.userForm.value,url).subscribe(res=>{this.id= this.userForm.controls["id"].value
     if(!this.fail){
       sessionStorage.clear()

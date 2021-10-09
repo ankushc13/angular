@@ -4,7 +4,6 @@ import { AppointmentsComponent } from './appointments/appointments.component';
 import { UserhomeComponent } from './userhome/userhome.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 
-
 const userRoutes: Routes = [
         { path: 'home', component: UserhomeComponent },
         { path: 'profile', component: UserprofileComponent },

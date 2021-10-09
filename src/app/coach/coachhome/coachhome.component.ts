@@ -16,25 +16,11 @@ export class CoachhomeComponent implements OnInit {
   }
   schedules(){
     this.schedulesDetail=[]
-    this.coachhomeService.schedules().subscribe(res=>{
-      for(const obj of res){
-        if(this.id===getId(obj)){
-          this.schedulesDetail.push(obj);
-        }
-      }
+    this.coachhomeService.schedules(this.id).subscribe(res=>{
+      this.schedulesDetail=res;
       console.log(this.schedulesDetail);
     }
     );
   }
 
-}
-
-function getId(res:any):any{
-  let id;
-  for (const [key, value] of Object.entries(res)) {
-    if(key=='coachId'){
-      id=value;
-    }
-  }
-  return id;
 }

@@ -9,11 +9,8 @@ export class CoachhomeService {
 
   constructor(private http:HttpClient) {}
 
-  schedules():Observable<any[]>{
-
-    return this.http.get<any[]>("http://localhost:8080/bookings");
+  schedules(id:any):Observable<any[]>{
+    return this.http.get<any[]>("http://localhost:3333/coaches/booking/"+id);
   }
-
-
 }
 

@@ -31,6 +31,7 @@ export class UserhomeComponent implements OnInit {
     this.coachDetail=[];
     this.userhomeService.allcoaches().subscribe(res=>{
       this.coachDetail=res;
+      console.log(res)
     })
   }
   onClick(id:number){
@@ -38,8 +39,9 @@ export class UserhomeComponent implements OnInit {
     this.selectedId=id;
   }
   confirmAppointment(){
-    var obj={appointmentDate:this.bookForm.controls["appointmentDate"].value,slot:this.bookForm.controls["slot"].value,userId:''+this.id,coachId:''+this.selectedId}
-    this.userhomeService.confirmAppointment(obj).subscribe(res=>{this.success=true;this.book=false});
+    var obj={appointmentDate:this.bookForm.controls["appointmentDate"].value,slot:this.bookForm.controls["slot"].value}
+    console.log(this.selectedId,"selected")
+    this.userhomeService.confirmAppointment(obj,this.id,this.selectedId).subscribe(res=>{this.success=true;this.book=false});
   }
 }
 

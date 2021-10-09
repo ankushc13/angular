@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'signup/:role', component: SignupComponent },
   { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
   { path: 'coach', loadChildren:()=> import('./coach/coach.module').then(m=>m.CoachModule) },
-  { path: '**', component: HomeComponent},
+  { path: '**', redirectTo:"home",pathMatch:'full'},
 
 ];
 

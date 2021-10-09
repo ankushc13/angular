@@ -10,10 +10,9 @@ export class UserhomeService {
   constructor(private http:HttpClient) { }
 
   allcoaches():Observable<any[]>{
-    return this.http.get<any[]>("http://localhost:8080/coaches");
-
+    return this.http.get<any[]>("http://localhost:3333/coaches/all");
   }
-  confirmAppointment(obj:any):Observable<any>{
-    return this.http.post("http://localhost:8080/bookings",obj)
+  confirmAppointment(obj:any,id:any,cId:any):Observable<any>{
+    return this.http.post("http://localhost:3333/booking/users/"+id+'/booking/'+cId,obj)
   }
 }

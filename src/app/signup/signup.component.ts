@@ -63,16 +63,13 @@ export class SignupComponent implements OnInit {
     }
   }
   coachRegister(){
-    let url ="http://localhost:8080/coaches";
+    let url ="http://localhost:3333/coaches";
     this.success=false;
     this.signupService.register(this.coachForm.value,url).subscribe(res=>{
-        for (const [key, value] of Object.entries(res)) {
-          if(key=='id'){
-            this.id=value;
+        
+            this.id=res;
             this.success=true;
             console.log("value",this.id)
-          }
-        }
         if(this.success){
           this.coachf=false;
           this.userf=false;
@@ -83,16 +80,14 @@ export class SignupComponent implements OnInit {
     
   }
   userRegister(){
-    let url ="http://localhost:8080/users";
+    let url ="http://localhost:3333/users";
     this.success=false;
     this.signupService.register(this.userForm.value,url).subscribe(res=>{
-        for (const [key, value] of Object.entries(res)) {
-          if(key=='id'){
-            this.id=value;
+        console.log(res);
+            this.id=res;
             this.success=true;
             console.log("value",this.id)
-          }
-        }
+         
         if(this.success){
           this.coachf=false;
           this.userf=false;
