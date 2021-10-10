@@ -18,6 +18,7 @@
  </div>
  <div class="container" *ngIf="book&&!success">
     <div class="appoint">
+        <h3 style="text-align: center;">Procced with your appointment</h3>
         <form [formGroup]="bookForm">
             <div class="row">
                     <div class="form-group">
@@ -45,7 +46,7 @@
                 </div>
         </form>
         <div style="text-align:center;">
-            <button type="button" class="btn btn-primary" (click)="confirmAppointment()">Register</button>
+            <button type="button" class="btn btn-primary" (click)="confirmAppointment()">Confirm your appointment</button>
         </div>
     </div>
  </div>
